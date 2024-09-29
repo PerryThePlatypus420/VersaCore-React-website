@@ -1,3 +1,35 @@
 .navbar {
     z-index: 1000;
 }
+
+.nav-item{
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.easeInOutQuad {
+    transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+/* Styles for the sidebar when the toggle button is clicked */
+.navbar-collapse {
+    padding: 1rem; /* Optional padding for aesthetics */
+}
+
+@media (max-width: 992px) {
+    .navbar-collapse {
+        background-color: #0c0c1b; /* Ensure the color applies in mobile view */
+        text-align: center; /* Center the links */
+        border-radius: 15px;
+        max-width: 200px;
+        /* align the div to the right of viewport */
+        position: absolute;
+        top: 65px;
+        right: 10px;
+        border: 1px solid #4b4b4b;
+        
+    }
+}
