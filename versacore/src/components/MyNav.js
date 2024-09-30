@@ -20,11 +20,6 @@ function MyNav() {
                             <Link
                                 to="backImg" // This should match the id of the respective section
                                 className="nav-link fs-6 text-light"
-                                smooth="easeInOutQuad" // Custom easing function
-                                duration={800} // Adjusted scrolling duration
-                                spy={true}
-                                exact="true"
-                                offset={-70} // Optional offset for fixed navbar
                             >
                                 Home
                             </Link>
@@ -33,11 +28,6 @@ function MyNav() {
                             <Link
                                 to="ourMission" // Id of the Our Mission section
                                 className="nav-link fs-6 text-light"
-                                smooth="easeInOutQuad"
-                                duration={800}
-                                spy={true}
-                                exact="true"
-                                offset={-70}
                             >
                                 Our Mission
                             </Link>
@@ -46,11 +36,6 @@ function MyNav() {
                             <Link
                                 to="ourServices" // Id of the Services section
                                 className="nav-link fs-6 text-light"
-                                smooth="easeInOutQuad"
-                                duration={800}
-                                spy={true}
-                                exact="true"
-                                offset={-70}
                             >
                                 Services
                             </Link>
@@ -59,24 +44,22 @@ function MyNav() {
                             <Link
                                 to="aboutUs" // Id of the About Us section
                                 className="nav-link fs-6 text-light"
-                                smooth="easeInOutQuad"
-                                duration={800}
-                                spy={true}
-                                exact="true"
-                                offset={-70}
                             >
                                 About Us
                             </Link>
                         </li>
                         <li className="nav-item mx-2">
                             <Link
+                                to="ourTeam" // Id of the Contact Us section
+                                className="nav-link fs-6 text-light"
+                            >
+                                Our Team
+                            </Link>
+                        </li>
+                        <li className="nav-item mx-2">
+                            <Link
                                 to="contactUs" // Id of the Contact Us section
                                 className="nav-link fs-6 text-light"
-                                smooth="easeInOutQuad"
-                                duration={800}
-                                spy={true}
-                                exact="true"
-                                offset={-70}
                             >
                                 Contact Us
                             </Link>

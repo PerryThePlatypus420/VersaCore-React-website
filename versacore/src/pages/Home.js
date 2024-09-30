@@ -4,6 +4,7 @@ import OurMission from "../components/OurMission";
 import OurServices from "../components/OurServices";
 import AboutUs from "../components/AboutUs";
 import ContactUs from "../components/ContactUs";
+import OurTeam from "../components/OurTeam";
 
 function Home() {
     return (
@@ -19,6 +20,9 @@ function Home() {
             </div>
             <div id="aboutUs">
                 <AboutUs />
+            </div>
+            <div id="ourTeam">
+                <OurTeam />
             </div>
             <div id="contactUs">
                 <ContactUs />

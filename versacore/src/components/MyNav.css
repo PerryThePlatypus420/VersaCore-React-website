@@ -10,10 +10,6 @@ html {
     scroll-behavior: smooth;
 }
 
-.easeInOutQuad {
-    transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
-}
-
 /* Styles for the sidebar when the toggle button is clicked */
 .navbar-collapse {
     padding: 1rem; /* Optional padding for aesthetics */
