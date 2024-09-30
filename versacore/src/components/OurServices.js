@@ -1,5 +1,4 @@
 import React from "react";
-import './OurServices.css'; // Import the CSS file
 
 const services = [
     {
@@ -44,7 +43,7 @@ function OurServices() {
                 <div className="row g-4">
                     {services.map((serviceCategory, index) => (
                         <div className="col-md-4" key={index}>
-                            <div className="card text-white h-100 shadow-sm custom-card">
+                            <div className="card text-white h-100 shadow-sm custom-card" style={{backgroundColor:"rgba(46,46,87,0.6)"}}>
                                 <div className="card-body p-4">
                                     <h5 className="card-title text-center fw-bold mb-4">
                                         {serviceCategory.category}

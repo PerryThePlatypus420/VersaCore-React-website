@@ -42,7 +42,7 @@ function OurTeam() {
             <div className="row justify-content-center" style={{marginLeft:"20px"}}>
                 {teamMembers.map((member, index) => (
                     <div className="col-md-4 mb-4" key={index}>
-                        <div className="card text-white" style={{ width: "90%", backgroundColor:"rgba(0, 0, 0, 0.4)", border:"1px solid #4b4b4b" }}>
+                        <div className="card text-white" style={{ width: "90%", backgroundColor:"rgba(0,0,0,0.5)"}}>
                             <img src={member.image} className="card-img-top" alt={member.name} style={{ height: "200px", objectFit: "cover" }} />
                             <div className="card-body text-center" style={{ padding: "10px" }}>
                                 <h5 className="card-title" style={{ fontSize: "1.3rem" }}>{member.name}</h5>

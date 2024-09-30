@@ -1,6 +1,7 @@
 import React from "react";
 import "./Back-img.css";
 import bgimg from "../assets/landing-page-img.jpg";
+import { Link } from "react-scroll";
 
 function BackImg() {
     return (
@@ -15,7 +16,7 @@ function BackImg() {
                     IT services designed to meet the diverse needs of our clients. 
                     Our expertise spans several critical areas.
                 </p>
-                <button className="btn btn-primary btn-lg">More About Our Services</button>
+                <Link to="ourServices" className="btn btn-primary btn-lg">More About Our Services</Link>
             </div>
         </div>
     );

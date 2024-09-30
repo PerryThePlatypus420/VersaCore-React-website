@@ -7,10 +7,10 @@ function MyNav() {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark position-absolute w-100">
             <div className="container">
-                <a href="/" className="navbar-brand d-flex align-items-center">
+                <Link to='backImg' className="navbar-brand d-flex align-items-center" style={{cursor:"pointer"}}>
                     <img src={versacore_icon} alt="VersaCore Icon" className="me-2" style={{ height: '40px' }} />
                     <span className="fs-3">VersaCore</span>
-                </a>
+                </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
