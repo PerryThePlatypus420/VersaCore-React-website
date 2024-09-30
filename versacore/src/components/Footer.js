@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 import versacore_icon from '../assets/versacore_icon.png';
 
 function Footer() {
@@ -17,7 +18,7 @@ function Footer() {
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-md-4 mb-3 mb-md-0">
-                        <Link to='backImg' className="navbar-brand d-flex align-items-center" style={{cursor:"pointer"}}>
+                        <Link to='/' className="navbar-brand d-flex align-items-center" style={{cursor:"pointer"}}>
                             <img src={versacore_icon} alt="VersaCore Icon" className="me-2" style={{ height: '40px' }} />
                             <span className="fs-3">VersaCore</span>
                         </Link>
@@ -30,12 +31,12 @@ function Footer() {
                         <ul className="list-inline text-center mb-0">
                             {quickLinks.map((link, index) => (
                                 <li key={index} className="list-inline-item me-3 mb-2" style={{ cursor: "pointer" }}>
-                                    <Link
+                                    <ScrollLink
                                         to={link.id}
                                         className="text-white text-decoration-none"
                                     >
                                         {link.name}
-                                    </Link>
+                                    </ScrollLink>
                                 </li>
                             ))}
                         </ul>

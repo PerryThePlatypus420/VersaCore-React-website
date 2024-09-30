@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-scroll'; // Import Link from react-scroll
+import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 import versacore_icon from '../assets/versacore_icon.png';
 import './MyNav.css';
 
@@ -7,7 +8,7 @@ function MyNav() {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark position-absolute w-100">
             <div className="container">
-                <Link to='backImg' className="navbar-brand d-flex align-items-center" style={{cursor:"pointer"}}>
+                <Link to='/' className="navbar-brand d-flex align-items-center" style={{cursor:"pointer"}}>
                     <img src={versacore_icon} alt="VersaCore Icon" className="me-2" style={{ height: '40px' }} />
                     <span className="fs-3">VersaCore</span>
                 </Link>
@@ -17,52 +18,52 @@ function MyNav() {
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item mx-2">
-                            <Link
+                            <ScrollLink
                                 to="backImg" // This should match the id of the respective section
                                 className="nav-link fs-6 text-light"
                             >
                                 Home
-                            </Link>
+                            </ScrollLink>
                         </li>
                         <li className="nav-item mx-2">
-                            <Link
+                            <ScrollLink
                                 to="ourMission" // Id of the Our Mission section
                                 className="nav-link fs-6 text-light"
                             >
                                 Our Mission
-                            </Link>
+                            </ScrollLink>
                         </li>
                         <li className="nav-item mx-2">
-                            <Link
+                            <ScrollLink
                                 to="ourServices" // Id of the Services section
                                 className="nav-link fs-6 text-light"
                             >
                                 Services
-                            </Link>
+                            </ScrollLink>
                         </li>
                         <li className="nav-item mx-2">
-                            <Link
+                            <ScrollLink
                                 to="aboutUs" // Id of the About Us section
                                 className="nav-link fs-6 text-light"
                             >
                                 About Us
-                            </Link>
+                            </ScrollLink>
                         </li>
                         <li className="nav-item mx-2">
-                            <Link
+                            <ScrollLink
                                 to="ourTeam" // Id of the Contact Us section
                                 className="nav-link fs-6 text-light"
                             >
                                 Our Team
-                            </Link>
+                            </ScrollLink>
                         </li>
                         <li className="nav-item mx-2">
-                            <Link
+                            <ScrollLink
                                 to="contactUs" // Id of the Contact Us section
                                 className="nav-link fs-6 text-light"
                             >
                                 Contact Us
-                            </Link>
+                            </ScrollLink>
                         </li>
                     </ul>
                 </div>
