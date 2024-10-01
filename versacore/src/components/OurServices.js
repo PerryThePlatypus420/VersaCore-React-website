@@ -39,7 +39,7 @@ function OurServices() {
     return (
         <section className="py-5">
             <div className="container">
-                <h2 className="text-center mb-5" style={{ fontWeight: "bold", fontSize: "2rem" }}>Our Services</h2>
+            <h2 className="text-center mb-5 heading">Our <span className="purple-text">Services</span></h2>
                 <div className="row g-4">
                     {services.map((serviceCategory, index) => (
                         <div className="col-md-4" key={index}>

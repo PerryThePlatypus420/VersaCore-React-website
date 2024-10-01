@@ -4,9 +4,9 @@ function OurMission() {
 
     return (
 
-        <section className="py-5">
+        <section className="py-5 mt-5">
                 <div className="container">
-                    <h2 className="text-center mb-4" style={{ fontWeight: "bold", fontSize: "2rem" }}>Our Mission</h2>
+                    <h2 className="text-center mb-4 heading">Our <span className="purple-text">Mission</span></h2>
                     <div className="row justify-content-center">
                         <div className="col-lg-8">
                             <p className="text-center fs-5">

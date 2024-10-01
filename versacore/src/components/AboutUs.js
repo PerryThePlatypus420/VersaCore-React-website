@@ -3,10 +3,10 @@ import React from "react";
 function AboutUs() {
     return (
         <section className="py-5 mt-5">
-            <div className="container" style={{ marginLeft: "0px" }}> {/* Adjust the left margin */}
+            <div className="container" style={{ paddingLeft: "6px" }}> {/* Adjust the left margin */}
                 <div className="row justify-content-between align-items-center">
                     <div className="col-lg-3 text-lg-end text-center">
-                        <h2 className="about-heading" style={{ fontWeight: "bold", fontSize: "2rem" }}>About Us</h2>
+                    <h2 className="text-center mb-5 heading"><span className="purple-text">About</span> Us</h2>
                     </div>
                     <div className="col-lg-8">
                         <p className="fs-5 mt-3">

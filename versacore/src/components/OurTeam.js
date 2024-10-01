@@ -7,49 +7,72 @@ const teamMembers = [
         name: "Hamza Bin Abid",
         designation: "Project Manager",
         motto: "Leading with vision.",
-        image: Hamza
+        image: Hamza,
+        linkedIn: "https://www.linkedin.com/in/hamza-bin-abid"
     },
     {
         name: "Abdullah Riaz",
         designation: "VP of Technology",
         motto: "Innovating for the future.",
-        image: AbdullahRiaz
+        image: AbdullahRiaz,
+        linkedIn: "https://www.linkedin.com/in/abdullah-riaz-5013aa327"
     },
     {
         name: "John Smith",
         designation: "COO",
         motto: "Operations for excellence.",
-        image: "https://via.placeholder.com/150"
+        image: "https://via.placeholder.com/150",
+        linkedIn: "https://www.linkedin.com/in/john-smith"
     },
     {
         name: "Emily Johnson",
         designation: "CFO",
         motto: "Financial integrity.",
-        image: "https://via.placeholder.com/150"
+        image: "https://via.placeholder.com/150",
+        linkedIn: "https://www.linkedin.com/in/emily-johnson"
     },
     {
         name: "Michael Brown",
         designation: "CMO",
         motto: "Marketing with a purpose.",
-        image: "https://via.placeholder.com/150"
+        image: "https://via.placeholder.com/150",
+        linkedIn: "https://www.linkedin.com/in/michael-brown"
     },
 ];
 
 function OurTeam() {
     return (
         <div className="container py-5">
-            <h2 className="text-center mb-5">Our Team</h2>
-            <div className="row justify-content-center" style={{marginLeft:"20px"}}>
+            <h2 className="text-center mb-5 heading">Our <span className="purple-text">Team</span></h2>
+            <div className="row justify-content-center" style={{ marginLeft: "20px" }}>
                 {teamMembers.map((member, index) => (
                     <div className="col-md-4 mb-4" key={index}>
-                        <div className="card text-white" style={{ width: "90%", backgroundColor:"rgba(0,0,0,0.5)"}}>
-                            <img src={member.image} className="card-img-top" alt={member.name} style={{ height: "200px", objectFit: "cover" }} />
-                            <div className="card-body text-center" style={{ padding: "10px" }}>
-                                <h5 className="card-title" style={{ fontSize: "1.3rem" }}>{member.name}</h5>
-                                <p className="card-text" style={{ fontSize: "1rem" }}>{member.designation}</p>
-                                <p className="card-text" style={{ fontSize: "0.85rem" }}><em>{member.motto}</em></p>
+                        <a href={member.linkedIn} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+                            <div
+                                className="card text-white"
+                                style={{
+                                    width: "90%",
+                                    backgroundColor: "rgba(0,0,0,0.5)",
+                                    transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                                    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)"
+                                }}
+                                onMouseEnter={e => {
+                                    e.currentTarget.style.transform = "scale(1.05)";
+                                    e.currentTarget.style.boxShadow = "0 8px 16px rgba(0, 0, 0, 0.3)";
+                                }}
+                                onMouseLeave={e => {
+                                    e.currentTarget.style.transform = "scale(1)";
+                                    e.currentTarget.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.1)";
+                                }}
+                            >
+                                <img src={member.image} className="card-img-top" alt={member.name} style={{ height: "200px", objectFit: "cover" }} />
+                                <div className="card-body text-center" style={{ padding: "10px" }}>
+                                    <h5 className="card-title" style={{ fontSize: "1.3rem" }}>{member.name}</h5>
+                                    <p className="card-text" style={{ fontSize: "1rem" }}>{member.designation}</p>
+                                    <p className="card-text" style={{ fontSize: "0.85rem" }}><em>{member.motto}</em></p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 ))}
             </div>

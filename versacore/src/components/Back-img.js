@@ -8,15 +8,21 @@ function BackImg() {
         <div className="hero-container">
             <img src={bgimg} alt="landing-page-img" className="bg-img" />
             <div className="overlay"></div>
-            
+
             <div className="hero-content">
                 <h1 className="display-5 fw-bold mb-4">Engineering Excellence and IT Innovation</h1>
                 <p className="lead mb-5">
-                    At VersaCore, we offer a comprehensive suite of engineering and 
-                    IT services designed to meet the diverse needs of our clients. 
+                    At VersaCore, we offer a comprehensive suite of engineering and
+                    IT services designed to meet the diverse needs of our clients.
                     Our expertise spans several critical areas.
                 </p>
-                <Link to="ourServices" className="btn btn-primary btn-lg">More About Our Services</Link>
+                <Link
+                    to="ourServices"
+                    className="btn btn-primary btn-lg"
+                    offset={-70}
+                >
+                    More About Our Services
+                </Link>
             </div>
         </div>
     );

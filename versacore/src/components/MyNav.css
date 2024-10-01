@@ -9,7 +9,7 @@
     background-color: rgb(37, 20, 43);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 25px;
-    border: 1px solid #4b4b4b;
+    border: 2px solid #53535373;
     width: 90%;
     max-width: 1000px;
     margin: 10px auto;
@@ -34,7 +34,7 @@ html {
     }
 
     .navbar-collapse {
-        background-color: #0c0c1b;
+        background-color: rgb(37, 20, 43);
         text-align: center;
         border-radius: 15px;
         max-width: 200px;

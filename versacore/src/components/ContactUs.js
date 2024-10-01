@@ -15,9 +15,8 @@ function ContactUs() {
             <div className="container" style={{ marginRight: "20px" }}>
                 <div className="row align-items-center custom-class-contact">
                     <div className="col-md-4 order-md-2 order-1 text-center">
-                        <h2 className="text-center mb-5" style={{ fontWeight: "bold", fontSize: "2rem" }}>
-                            Contact Us
-                        </h2>
+                    <h2 className="text-center mb-5 heading"><span className="purple-text">Contact</span> Us</h2>
+
                     </div>
                     <div className="col-md-8 order-md-1 order-2">
                         <div className="card text-white h-100 shadow-sm custom-card"  style={{backgroundColor:"rgba(46,46,87,0.6)"}}>
