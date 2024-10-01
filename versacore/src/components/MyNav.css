@@ -1,8 +1,21 @@
 .navbar {
     z-index: 1000;
+    transition: all 0.3s ease;
+    padding: 1rem 0;
+    width: 100%;
 }
 
-.nav-item{
+.navbar-scrolled {
+    background-color: rgb(37, 20, 43);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    border: 1px solid #4b4b4b;
+    width: 90%;
+    max-width: 1000px;
+    margin: 10px auto;
+}
+
+.nav-item {
     cursor: pointer;
 }
 
@@ -12,20 +25,22 @@ html {
 
 /* Styles for the sidebar when the toggle button is clicked */
 .navbar-collapse {
-    padding: 1rem; /* Optional padding for aesthetics */
+    padding: 1rem;
 }
 
 @media (max-width: 992px) {
+    .navbar-scrolled {
+        width: 95%; /* Slightly wider on smaller screens */
+    }
+
     .navbar-collapse {
-        background-color: #0c0c1b; /* Ensure the color applies in mobile view */
-        text-align: center; /* Center the links */
+        background-color: #0c0c1b;
+        text-align: center;
         border-radius: 15px;
         max-width: 200px;
-        /* align the div to the right of viewport */
         position: absolute;
         top: 65px;
         right: 10px;
         border: 1px solid #4b4b4b;
-        
     }
 }

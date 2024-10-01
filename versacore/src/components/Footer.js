@@ -34,6 +34,7 @@ function Footer() {
                                     <ScrollLink
                                         to={link.id}
                                         className="text-white text-decoration-none"
+                                        offset={-70}
                                     >
                                         {link.name}
                                     </ScrollLink>

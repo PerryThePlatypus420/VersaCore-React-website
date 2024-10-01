@@ -1,12 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 import versacore_icon from '../assets/versacore_icon.png';
 import './MyNav.css';
 
 function MyNav() {
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark position-absolute w-100">
+        <nav className={`navbar navbar-expand-lg navbar-dark fixed-top ${isScrolled ? 'navbar-scrolled' : ''}`}>
             <div className="container">
                 <Link to='/' className="navbar-brand d-flex align-items-center" style={{cursor:"pointer"}}>
                     <img src={versacore_icon} alt="VersaCore Icon" className="me-2" style={{ height: '40px' }} />
@@ -19,7 +37,7 @@ function MyNav() {
                     <ul className="navbar-nav">
                         <li className="nav-item mx-2">
                             <ScrollLink
-                                to="backImg" // This should match the id of the respective section
+                                to="backImg"
                                 className="nav-link fs-6 text-light"
                             >
                                 Home
@@ -27,40 +45,48 @@ function MyNav() {
                         </li>
                         <li className="nav-item mx-2">
                             <ScrollLink
-                                to="ourMission" // Id of the Our Mission section
+                                to="ourMission"
                                 className="nav-link fs-6 text-light"
+                                offset={-70}
                             >
                                 Our Mission
                             </ScrollLink>
                         </li>
                         <li className="nav-item mx-2">
                             <ScrollLink
-                                to="ourServices" // Id of the Services section
+                                to="ourServices"
                                 className="nav-link fs-6 text-light"
+                                offset={-70}
+
                             >
                                 Services
                             </ScrollLink>
                         </li>
                         <li className="nav-item mx-2">
                             <ScrollLink
-                                to="aboutUs" // Id of the About Us section
+                                to="aboutUs"
                                 className="nav-link fs-6 text-light"
+                                offset={-70}
                             >
                                 About Us
                             </ScrollLink>
                         </li>
                         <li className="nav-item mx-2">
                             <ScrollLink
-                                to="ourTeam" // Id of the Contact Us section
+                                to="ourTeam"
                                 className="nav-link fs-6 text-light"
+                                offset={-70}
+                            
                             >
                                 Our Team
                             </ScrollLink>
                         </li>
                         <li className="nav-item mx-2">
                             <ScrollLink
-                                to="contactUs" // Id of the Contact Us section
+                                to="contactUs"
                                 className="nav-link fs-6 text-light"
+                                offset={-90}
+                            
                             >
                                 Contact Us
                             </ScrollLink>
