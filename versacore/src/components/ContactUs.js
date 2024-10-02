@@ -2,7 +2,7 @@ import React from "react";
 
 function ContactUs() {
     const contactInfo = [
-        { icon: "fas fa-map-marker-alt", text: "Gaithersburg, Marylands 20877, US", link: "https://maps.app.goo.gl/5MHpBQwb7dvCRGiT7?g_st=com.google.maps.preview.copy" },
+        { icon: "fas fa-map-marker-alt", text: "Gaithersburg, Maryland 20877, US", link: "https://maps.app.goo.gl/5MHpBQwb7dvCRGiT7?g_st=com.google.maps.preview.copy" },
         { icon: "fas fa-phone", text: "+92 300 9445989", link: "tel:+923009445989" },
         { icon: "fab fa-whatsapp", text: "+92 300 9445989", link: "https://wa.me/+923009445989" },
         { icon: "fas fa-envelope", text: "versacore0@gmail.com", link: "mailto:versacore0@gmail.com" },
