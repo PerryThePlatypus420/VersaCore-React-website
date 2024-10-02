@@ -6,10 +6,10 @@
 }
 
 .navbar-scrolled {
-    background-color: rgb(37, 20, 43);
+    background-color: rgba(46, 39, 49, 0.8);
+    backdrop-filter: blur(10px);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 25px;
-    border: 2px solid #53535373;
     width: 90%;
     max-width: 1000px;
     margin: 10px auto;
