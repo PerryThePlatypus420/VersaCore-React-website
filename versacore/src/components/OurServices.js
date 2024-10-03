@@ -6,31 +6,35 @@ const services = [
         items: [
             { title: "Graphic Designing", icon: "🎨" },
             { title: "GUI Designing", icon: "🖥️" },
-            { title: "AI based Automation & Data Analysis", icon: "🤖" }
+            { title: "AI based Automation & Data Analysis", icon: "🤖" },
+            { title: "Pintrest Marketing", icon: "🖼️" }
         ]
     },
     {
         category: "Mobile & Web Services",
         items: [
             { title: "UI/UX Designing", icon: "📱" },
-            { title: "Amazon Web Services", icon: "☁️" },
+            { title: "SQA", icon: "🧩" },
             { title: "Database (MySQL & NoSQL)", icon: "💾" },
             { title: "Web Applications (Node.js)", icon: "🌐" },
             { title: "React.js & Laravel", icon: "⚛️" },
-            { title: "Customized AOSP (Mobile, Wearable & Car Kit)", icon: "📲" }
+            { title: "Mobile App Development (Flutter , React-native)", icon: "📲" },
+            
         ]
     },
     {
         category: "Electrical Hardware Services",
         items: [
             { title: "Custom PCB Design", icon: "🔌" },
-            { title: "Electro-Mechanical System", icon: "⚙️" },
+            { title: "Firmware Designing", icon: "⚙️" },
             { title: "Battery Management System", icon: "🔋" },
             { title: "Power Grid Design Analysis", icon: "🔧" },
             { title: "AC/DC Power Converters", icon: "🔄" },
             { title: "Wireless Communication", icon: "📡" },
             { title: "Electrical Hardware", icon: "💡" },
-            { title: "IoT Hardware", icon: "📶" }
+            { title: "R&D", icon: "📶" },
+            { title: "Product Development", icon: "📦" },
+            { title: "Chip Designing", icon: "💿" }
         ]
     }
 ];

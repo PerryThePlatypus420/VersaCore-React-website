@@ -1,6 +1,10 @@
 import React from "react";
 import AbdullahRiaz from "../assets/AbdullahRiaz-cropped.jpg";
 import Hamza from "../assets/Hamza Bin Abid-cropped.jpg";
+import Mahnoor from "../assets/Mahnoor.jpeg";
+import Fakham from "../assets/Fakham.jpeg";
+import vish from "../assets/Vishma.jpeg";
+
 
 const teamMembers = [
     {
@@ -18,25 +22,25 @@ const teamMembers = [
         linkedIn: "https://www.linkedin.com/in/abdullah-riaz-5013aa327"
     },
     {
-        name: "John Smith",
-        designation: "COO",
-        motto: "Operations for excellence.",
-        image: "https://via.placeholder.com/150",
-        linkedIn: "https://www.linkedin.com/in/john-smith"
+        name: "Wishma Khurram",
+        designation: "CTO",
+        motto: "Driving innovation through technology and leadership.",
+        image: vish,
+        linkedIn: "https://www.linkedin.com/in/wishma-khurram-47950b257/"
     },
     {
-        name: "Emily Johnson",
-        designation: "CFO",
-        motto: "Financial integrity.",
-        image: "https://via.placeholder.com/150",
-        linkedIn: "https://www.linkedin.com/in/emily-johnson"
+        name: "Fakham Chaudhary",
+        designation: "Software Developer",
+        motto: "Building solutions, one line of code at a time.",
+        image: Fakham,
+        linkedIn: "https://www.linkedin.com/in/fakham-chaudhary-859391240/"
     },
     {
-        name: "Michael Brown",
-        designation: "CMO",
-        motto: "Marketing with a purpose.",
-        image: "https://via.placeholder.com/150",
-        linkedIn: "https://www.linkedin.com/in/michael-brown"
+        name: "Mahnoor Ejaz",
+        designation: "Technical Lead",
+        motto: "Empowering teams to deliver scalable and innovative solutions.",
+        image: Mahnoor,
+        linkedIn: "https://www.linkedin.com/in/mahnoorejazcs/"
     },
 ];
 
